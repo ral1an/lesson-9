@@ -31,6 +31,17 @@
             }
             return arr;
         }
+
+        function getValues(obj) {
+            const arr = [];
+            for (let key in obj) {
+                const arrNew = [];
+                arrNew.push(key);
+                arrNew.push(obj[key]);
+                arr.push(arrNew);
+            }
+            return arr;
+        }
     </script>
 </body>
 </html>
