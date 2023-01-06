@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cloneObject(obj) {
+            const cloneObj = {};
+            for (let key in obj) {
+                cloneObj[key] = obj[key];
+            }
+            return cloneObj;
+        }
+
+        function getValues(obj) {
+            const arr = [];
+            for (let key in obj) {
+                arr.push(obj[key]);
+            }
+            return arr;
+        }
+
+        function getValues(obj) {
+            const arr = [];
+            for (let key in obj) {
+                arr.push(key);
+            }
+            return arr;
+        }
+    </script>
+</body>
+</html>
